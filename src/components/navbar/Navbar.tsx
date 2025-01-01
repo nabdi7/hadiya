@@ -8,7 +8,7 @@ import Link from "next/link";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ["Home", "About Us", "Programs", "Contact", "Enroll Now"];
+  const menuItems = ["Home", "About", "Programs", "Contact", "Enroll Now"];
 
   return (
     <nav className=" w-full bg-white/80 backdrop-blur-md z-50">

@@ -1,5 +1,5 @@
 import React from "react";
-import ProgramsPage from "@/components/programs/ProgramsPage";
+import AboutPage from "@/components/about/AboutPage";
 
 export const metadata = {
   title: "Contact Us | Najah Family Childcare - Seattle Home Childcare",
@@ -22,7 +22,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <ProgramsPage />
+      <AboutPage />
     </div>
   );
 };
