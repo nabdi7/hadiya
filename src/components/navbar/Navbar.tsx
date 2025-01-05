@@ -8,14 +8,20 @@ import Link from "next/link";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ["Home", "About", "Programs", "Contact", "Enroll Now"];
+  const menuItems = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Programs", path: "/programs" },
+    { name: "Contact", path: "/contact" },
+    { name: "Enroll Now", path: "/contact" },
+  ];
 
   return (
-    <nav className=" w-full bg-white/80 backdrop-blur-md z-50">
+    <nav className="w-full bg-white/80 backdrop-blur-md z-50">
       <div className="max-w-6xl mx-auto px-4">
         {/* Logo */}
         <div className="flex justify-center py-4">
-          <div className="relative w-32 h-16">
+          <Link href="/" className="relative w-32 h-28">
             <Image
               src="/hadiya-transparent.png"
               alt="Hadiya Logo"
@@ -23,7 +29,7 @@ const Navbar = () => {
               className="object-contain"
               priority
             />
-          </div>
+          </Link>
         </div>
 
         {/* Desktop Menu */}
@@ -31,15 +37,15 @@ const Navbar = () => {
           <div className="flex items-center gap-12">
             {menuItems.map((item) => (
               <Link
-                key={item}
-                href={`/${item.toLowerCase().replace(" ", "-")}`}
+                key={item.name}
+                href={item.path}
                 className={`text-gray-600 hover:text-[#A9B5F9] transition-colors ${
-                  item === "Enroll Now"
+                  item.name === "Enroll Now"
                     ? "bg-[#A9B5F9] text-white px-6 py-2 rounded-full hover:bg-opacity-90"
                     : ""
                 }`}
               >
-                {item}
+                {item.name}
               </Link>
             ))}
           </div>
