@@ -1,10 +1,9 @@
-// components/Testimonials.tsx
-import React from 'react';
-import { Star } from 'lucide-react';
+import React from "react";
+import { Star } from "lucide-react";
 
 const Testimonials = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">What Parents Say</h2>
@@ -16,7 +15,11 @@ const Testimonials = () => {
             <div key={index} className="p-8 rounded-2xl bg-gray-50">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={20} className="fill-[#A9B5F9] text-[#A9B5F9]" />
+                  <Star
+                    key={i}
+                    size={20}
+                    className="fill-[#A9B5F9] text-[#A9B5F9]"
+                  />
                 ))}
               </div>
               <p className="text-gray-600 mb-6">{testimonial.text}</p>
@@ -37,17 +40,17 @@ const Testimonials = () => {
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    text: "The care and attention my child receives is exceptional. The staff truly goes above and beyond."
+    name: "M Zayas",
+    text: "Very flexible 24 hours which is a steal and a small quiet calm place to be! I dont often give 5 stars. Definitely recommended.",
   },
   {
     name: "Michael Chen",
-    text: "We've seen incredible development in our daughter's social and learning skills since joining KidsCare."
+    text: "We've seen incredible development in our daughter's social and learning skills since joining Hadiya.",
   },
   {
     name: "Emily Davis",
-    text: "The structured learning program combined with play-based activities is exactly what we were looking for."
-  }
+    text: "The structured program combined with play-based activities is exactly what we were looking for.",
+  },
 ];
 
 export default Testimonials;

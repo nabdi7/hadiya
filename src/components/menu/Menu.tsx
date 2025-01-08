@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { X } from "lucide-react";
 
 interface MobileMenuProps {
@@ -11,50 +10,46 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
   const menuItems = ["Home", "About Us", "Programs", "Contact", "Enroll Now"];
 
   return (
-    <div
-      className={`fixed top-0 left-0 h-screen w-80 bg-white z-[999] transform transition-transform duration-300 ease-in-out ${
-        isOpen ? "translate-x-0" : "-translate-x-full"
-      } shadow-2xl`}
-    >
-      <div className="flex flex-col h-full">
-        {/* Header */}
-        <div className="flex justify-between items-center p-4 border-b">
-          <div className="relative w-32 h-16">
-            <Image
-              src="/hadiya-transparent.png"
-              alt="Hadiya Logo"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
+    <>
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-[998]"
+          onClick={onClose}
+        />
+      )}
+      
+      <div
+        className={`fixed top-0 right-0 h-screen w-64 bg-white shadow-lg transform transition-transform duration-200 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } z-50`}
+      >
+        <div className="flex flex-col h-full">
           <button
             onClick={onClose}
-            className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+            className="p-4 flex justify-end"
           >
-            <X size={24} className="text-gray-600" />
+            <X className="w-6 h-6 text-[#A9B5F9]" />
           </button>
-        </div>
 
-        {/* Menu Items */}
-        <div className="flex flex-col py-8 px-4">
-          {menuItems.map((item) => (
-            <a
-              key={item}
-              href={`/${item.toLowerCase().replace(" ", "-")}`}
-              className={`py-4 text-lg text-gray-600 hover:text-[#A9B5F9] transition-colors ${
-                item === "Enroll Now"
-                  ? "bg-[#A9B5F9] px-6 py-3 rounded-full text-center mt-4"
-                  : "border-b border-gray-100"
-              }`}
-              onClick={onClose}
-            >
-              {item}
-            </a>
-          ))}
+          <nav className="flex flex-col gap-4 p-6">
+            {menuItems.map((item) => (
+              <a
+                key={item}
+                href={`/${item.toLowerCase().replace(" ", "-")}`}
+                className={`${
+                  item === "Enroll Now"
+                    ? "bg-[#A9B5F9] text-white px-6 py-3 rounded-full hover:bg-[#8b99f9] transition text-center mt-4"
+                    : "text-gray-600 hover:text-[#A9B5F9] transition px-4 py-2 rounded-lg hover:bg-gray-50"
+                }`}
+                onClick={onClose}
+              >
+                {item}
+              </a>
+            ))}
+          </nav>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

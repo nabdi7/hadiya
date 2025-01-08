@@ -19,8 +19,7 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-white/80 backdrop-blur-md z-50">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Logo */}
-        <div className="flex justify-center py-4">
+        <div className="flex justify-center items-center relative py-4">
           <Link href="/" className="relative w-32 h-28">
             <Image
               src="/hadiya-transparent.png"
@@ -30,9 +29,14 @@ const Navbar = () => {
               priority
             />
           </Link>
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden absolute right-0 text-gray-600"
+          >
+            <Menu size={24} />
+          </button>
         </div>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex justify-center pb-4">
           <div className="flex items-center gap-12">
             {menuItems.map((item) => (
@@ -50,17 +54,8 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden absolute right-4 top-8 text-gray-600"
-        >
-          <Menu size={24} />
-        </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
       <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
     </nav>
   );

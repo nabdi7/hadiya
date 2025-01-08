@@ -54,7 +54,7 @@ const Hero = () => {
           {/* Stats */}
           <div className="flex justify-center gap-12 mt-12">
             <div className="text-white text-center">
-              <div className="text-3xl font-bold">15+</div>
+              <div className="text-3xl font-bold">8+</div>
               <div className="text-sm text-gray-300">Years Experience</div>
             </div>
             <div className="text-white text-center">
@@ -62,8 +62,8 @@ const Hero = () => {
               <div className="text-sm text-gray-300">Happy Parents</div>
             </div>
             <div className="text-white text-center">
-              <div className="text-3xl font-bold">50+</div>
-              <div className="text-sm text-gray-300">Expert Teachers</div>
+              <div className="text-3xl font-bold">5+</div>
+              <div className="text-sm text-gray-300">Expert Staff</div>
             </div>
           </div>
         </div>

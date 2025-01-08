@@ -6,18 +6,31 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: {
-    default: "Hadiya Family Childcare | Loving Home Childcare in Seattle, WA",
+    default: "Hadiya Family Childcare | Licensed Daycare in Kent, WA",
     template: "%s | Hadiya Family Childcare"
   },
-  description: "Hadiya Family Childcare provides nurturing, licensed home childcare services for infants and toddlers in Seattle, WA. Offering a warm, safe environment where your child feels loved and cared for.",
-  keywords: ["childcare", "daycare", "home childcare", "seattle childcare", "infant care", "toddler care", "licensed childcare", "family childcare", "home daycare", "seattle wa"],
+  description: "Welcome to Hadiya Family Childcare, a trusted licensed daycare center in Kent, WA. We provide quality childcare, early education, and cultural activities in a nurturing environment.",
+  keywords: [
+    "childcare Kent WA",
+    "daycare Kent",
+    "licensed childcare",
+    "family daycare",
+    "early education Kent",
+    "child development",
+    "cultural learning",
+    "Hadiya Family Childcare",
+    "preschool Kent",
+    "childcare programs",
+    "daycare enrollment Kent",
+    "cultural childcare"
+  ],
   metadataBase: new URL(process.env.NEXT_PUBLIC_URL ?? siteConfig.url),
   authors: [
     {
       name: "Hadiya Family Childcare",
-      url: "https://najahfamilychildcare.com",
+      url: "https://hadiyachildcare.com",
     }
-  ], 
+  ],
   creator: "Hadiya Family Childcare",
   publisher: "Hadiya Family Childcare",
   formatDetection: {
@@ -26,27 +39,27 @@ export const metadata: Metadata = {
     telephone: true,
   },
   openGraph: {
-    title: "Hadiya Family Childcare | Loving Home Childcare in Seattle, WA",
-    description: "Discover loving, nurturing childcare in a home environment at Najah Family Childcare. Licensed provider offering infant and toddler care in Seattle, WA.",
-    url: "https://najahfamilychildcare.com",
-    siteName: "Najah Family Childcare",
+    title: "Hadiya Family Childcare | Licensed Daycare in Kent, WA",
+    description: "Experience quality childcare at Hadiya Family Childcare in Kent, WA. Our licensed facility offers early childhood education, cultural activities, and a nurturing environment for children.",
+    url: "https://hadiyachildcare.com",
+    siteName: "Hadiya Family Childcare",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://najahfamilychildcare.com/logo3.png",
+        url: "https://hadiyachildcare.com/og-image.jpg",
         width: 500,
         height: 500,
-        alt: "Najah Family Childcare | Loving Home Childcare in Seattle, WA",
+        alt: "Hadiya Family Childcare | Licensed Daycare in Kent, WA",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Najah Family Childcare | Loving Home Childcare in Seattle, WA",
-    description: "Discover loving, nurturing childcare in a home environment at Najah Family Childcare. Licensed provider offering infant and toddler care in Seattle, WA.",
-    images: ["https://najahfamilychildcare.com/logo3.png"],
+    title: "Hadiya Family Childcare - Kent, WA Daycare Center",
+    description: "Join our family at Hadiya Family Childcare in Kent, WA. Licensed childcare services with focus on early education, cultural enrichment, and creating a nurturing space for every child.",
+    images: ["https://najahfamilychildcare.com/og-image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",

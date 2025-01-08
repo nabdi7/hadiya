@@ -2,20 +2,20 @@ import React from "react";
 import ProgramsPage from "@/components/programs/ProgramsPage";
 
 export const metadata = {
-  title: "Contact Us | Najah Family Childcare - Seattle Home Childcare",
+  title: "Childcare Programs | Hadiya Family Childcare Kent, WA",
   description:
-    "Get in touch with Najah Family Childcare in Seattle. Inquire about availability, schedule a visit, or learn more about our infant and toddler care services in our nurturing home environment.",
+    "Explore our comprehensive childcare programs at Hadiya Family Childcare in Kent, WA. We offer age-appropriate activities, early education, and cultural learning in a nurturing environment.",
   openGraph: {
-    title: "Contact Us | Najah Family Childcare - Seattle Home Childcare",
+    title: "Childcare Programs | Hadiya Family Childcare Kent, WA",
     description:
-      "Connect with Najah Family Childcare in Seattle. We're here to answer your questions about our infant and toddler care services. Schedule a visit to our welcoming home daycare environment.",
+      "Quality childcare programs for all ages at Hadiya Family Childcare in Kent, WA. Our licensed daycare offers structured learning activities, cultural education, and engaging developmental programs.",
     type: "website",
-    url: "https://najahfamilychildcare.com/contact",
+    url: "https://hadiyachildcare.com/programs",
   },
   twitter: {
-    title: "Contact Us | Najah Family Childcare - Seattle Home Childcare",
+    title: "Childcare Programs - Hadiya Family Childcare Kent, WA",
     description:
-      "Connect with Najah Family Childcare in Seattle. We're here to answer your questions about our infant and toddler care services. Schedule a visit to our welcoming home daycare environment.",
+      "Find the perfect childcare program for your child at Hadiya Family Childcare in Kent, WA. We offer structured activities, early learning, and cultural enrichment for every age group.",
   },
 };
 
