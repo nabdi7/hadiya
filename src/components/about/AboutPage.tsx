@@ -36,7 +36,7 @@ const AboutPage = () => {
               <Image
                 width={500}
                 height={500}
-                src="/img4.jpg"
+                src="/img3.jpg"
                 alt="Children being cared for"
                 className="w-full h-80 object-cover"
               />

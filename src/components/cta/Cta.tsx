@@ -47,28 +47,28 @@ const Cta = () => {
               <Image
                 width={400}
                 height={400}
-                src="/img4.jpg"
+                src="/img1.jpg"
                 alt="Feature 1"
                 className="aspect-square rounded-2xl object-cover"
               />
               <Image
                 width={400}
                 height={400}
-                src="/img4.jpg"
+                src="/img2.jpg"
                 alt="Feature 2"
                 className="aspect-square rounded-2xl object-cover"
               />
               <Image
                 width={400}
                 height={400}
-                src="/img4.jpg"
+                src="/img3.jpg"
                 alt="Feature 3"
                 className="aspect-square rounded-2xl object-cover"
               />
               <Image
                 width={400}
                 height={400}
-                src="/img4.jpg"
+                src="/img7.jpeg"
                 alt="Feature 4"
                 className="aspect-square rounded-2xl object-cover"
               />

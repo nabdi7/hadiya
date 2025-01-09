@@ -18,7 +18,7 @@ const About = () => {
 
             <div className="relative rounded-3xl overflow-hidden shadow-xl border-8 border-white">
               <Image
-                src="/img4.jpg"
+                src="/img7.jpeg"
                 width={500}
                 height={500}
                 alt="Early Education"

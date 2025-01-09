@@ -201,7 +201,7 @@ const ContactPage = () => {
                 </button>
                 {formSubmitted && (
                   <p className="text-[#A9B5F9]">
-                    Successfull!! We&apos;ll get back to you shortly.
+                    Message received. Successfull!!.
                   </p>
                 )}
               </form>

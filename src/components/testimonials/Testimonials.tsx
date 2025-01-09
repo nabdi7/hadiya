@@ -1,5 +1,5 @@
 import React from "react";
-import { Star } from "lucide-react";
+import { Star, ExternalLink } from "lucide-react";
 
 const Testimonials = () => {
   return (
@@ -23,11 +23,18 @@ const Testimonials = () => {
                 ))}
               </div>
               <p className="text-gray-600 mb-6">{testimonial.text}</p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gray-200" />
+              <div className="flex items-center justify-between">
                 <div>
                   <div className="font-medium">{testimonial.name}</div>
-                  <div className="text-sm text-gray-500">Parent</div>
+                  <a
+                    href="https://www.google.com/maps/place/Hadiya+Home+Childcare/@47.4053302,-122.1913794,17z/data=!4m8!3m7!1s0x54905dd89377c3f5:0x6e5d903978bd9f29!8m2!3d47.4053302!4d-122.1888045!9m1!1b1!16s%2Fg%2F11v611htf3?entry=ttu&g_ep=EgoyMDI1MDEwNy4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-[#A9B5F9] hover:text-[#8697F7] transition-colors"
+                  >
+                    <span>See on Google</span>
+                    <ExternalLink size={14} />
+                  </a>
                 </div>
               </div>
             </div>
@@ -45,11 +52,11 @@ const testimonials = [
   },
   {
     name: "Michael Chen",
-    text: "We've seen incredible development in our daughter's social and learning skills since joining Hadiya.",
+    text: "My daughter loves coming here. The place is always clean and she's well taken care of. The flexible hours really help with my work schedule.",
   },
   {
     name: "Emily Davis",
-    text: "The structured program combined with play-based activities is exactly what we were looking for.",
+    text: "Great childcare! My kids are always happy when I pick them up. The 24/7 availability has been a lifesaver for my night shifts.",
   },
 ];
 
