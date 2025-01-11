@@ -6,10 +6,10 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: {
-    default: "Hadiya Family Childcare | Licensed Daycare in Kent, WA",
-    template: "%s | Hadiya Family Childcare"
+    default: "Hadiya Home Childcare | In Kent, WA provides full and part-time care for Infants, Toddlers, and Preschool students.",
+    template: "%s | Hadiya Home Childcare"
   },
-  description: "Welcome to Hadiya Family Childcare, a trusted licensed daycare center in Kent, WA. We provide quality childcare, early education, and cultural activities in a nurturing environment.",
+  description: "Welcome to Hadiya Home Childcare, a trusted licensed daycare center in Kent, WA. We provide quality childcare, early education, and cultural activities in a nurturing environment.",
   keywords: [
     "childcare Kent WA",
     "daycare Kent",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "early education Kent",
     "child development",
     "cultural learning",
-    "Hadiya Family Childcare",
+    "Hadiya Home Childcare",
     "preschool Kent",
     "childcare programs",
     "daycare enrollment Kent",
@@ -27,22 +27,22 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_URL ?? siteConfig.url),
   authors: [
     {
-      name: "Hadiya Family Childcare",
+      name: "Hadiya Home Childcare",
       url: "https://hadiyachildcare.com",
     }
   ],
-  creator: "Hadiya Family Childcare",
-  publisher: "Hadiya Family Childcare",
+  creator: "Hadiya Home Childcare",
+  publisher: "Hadiya Home Childcare",
   formatDetection: {
     email: true,
     address: true,
     telephone: true,
   },
   openGraph: {
-    title: "Hadiya Family Childcare | Licensed Daycare in Kent, WA",
-    description: "Experience quality childcare at Hadiya Family Childcare in Kent, WA. Our licensed facility offers early childhood education, cultural activities, and a nurturing environment for children.",
+    title: "Hadiya Home Childcare | In Kent, WA provides full and part-time care for Infants, Toddlers, and Preschool students.",
+    description: "Experience quality childcare at Hadiya Home Childcare in Kent, WA. Our licensed facility offers early childhood education, cultural activities, and a nurturing environment for children.",
     url: "https://hadiyachildcare.com",
-    siteName: "Hadiya Family Childcare",
+    siteName: "Hadiya Home Childcare",
     locale: "en_US",
     type: "website",
     images: [
@@ -50,15 +50,15 @@ export const metadata: Metadata = {
         url: "https://hadiyachildcare.com/og-image.jpg",
         width: 500,
         height: 500,
-        alt: "Hadiya Family Childcare | Licensed Daycare in Kent, WA",
+        alt: "Hadiya Home Childcare | In Kent, WA provides full and part-time care for Infants, Toddlers, and Preschool students.",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hadiya Family Childcare - Kent, WA Daycare Center",
-    description: "Join our family at Hadiya Family Childcare in Kent, WA. Licensed childcare services with focus on early education, cultural enrichment, and creating a nurturing space for every child.",
+    title: "Hadiya Home Childcare - Kent, WA Daycare Center",
+    description: "Join our family at Hadiya Home Childcare in Kent, WA. Licensed childcare services with focus on early education, cultural enrichment, and creating a nurturing space for every child.",
     images: ["https://najahfamilychildcare.com/og-image.jpg"],
   },
   icons: {
